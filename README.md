@@ -35,10 +35,10 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   > that function is contained in the Kids.js module. The logic is initialize the click target, the click targets ID, and datatype -> check if the datatype is equal to "child" -> if yes iterate over every kid element of the children array checking the .id property -> make a text alert showing current kids name and wish
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > findCelebrityMatch() matches the foreign celebrityId in the children table to the correct Id of the celebrity in the celebrities table. this needs to be done for every kid and thus is within the for loop.
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > first you match the id of the object click on to the celebrities.id property then you use string interpolation to display the celebrity.sport property ${celebrity.sport}
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > select the HTML container -> create a variable containing an HTML string that using string interpolation to call the Kids(), celebrities(), and pairings() functions which give an HTML string as a return -> set the main containers inner HTML to the HTML string that was just created in order to update the DOM with the new information.
